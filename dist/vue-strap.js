@@ -91,9 +91,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _Aside2 = _interopRequireDefault(_Aside);
 	
-	var _ButtonGroup = __webpack_require__(87);
+	var _buttonGroup = __webpack_require__(87);
 	
-	var _ButtonGroup2 = _interopRequireDefault(_ButtonGroup);
+	var _buttonGroup2 = _interopRequireDefault(_buttonGroup);
 	
 	var _Carousel = __webpack_require__(90);
 	
@@ -207,7 +207,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  affix: _Affix2.default,
 	  alert: _Alert2.default,
 	  aside: _Aside2.default,
-	  buttonGroup: _ButtonGroup2.default,
+	  buttonGroup: _buttonGroup2.default,
 	  carousel: _Carousel2.default,
 	  checkbox: _Checkbox2.default,
 	  datepicker: _Datepicker2.default,
@@ -3544,7 +3544,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/brendanashworth/Programming/JavaScript/vue-strap/src/ButtonGroup.vue"
+	__vue_options__.__file = "/Users/brendanashworth/Programming/JavaScript/vue-strap/src/buttonGroup.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -3555,12 +3555,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-62b1b457", __vue_options__)
+	    hotAPI.createRecord("data-v-c3c20712", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-62b1b457", __vue_options__)
+	    hotAPI.reload("data-v-c3c20712", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] ButtonGroup.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] buttonGroup.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -3631,7 +3631,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-62b1b457", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-c3c20712", module.exports)
 	  }
 	}
 
@@ -6916,7 +6916,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var _this2 = this;
 	
 	      this.$nextTick(function () {
-	        var popover = _this2.$refs.popover;
+	        var popover = _this2.$refs.popover || { style: {} };
 	        var trigger = _this2.$refs.trigger.children[0];
 	        switch (_this2.placement) {
 	          case 'top':
